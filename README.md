@@ -6,7 +6,11 @@ This project will investigate and analyse the well-known Fishers Iris Data Set. 
 
 Literature Review
 
-After studying many different articles, books and videos on Fishers data set analyses which presented numerous different approaches to analysing the data set, I concluded that a simplified exploratory data analysis would work best. Exploratory Data Analysis is the process of analysing data by using simple concepts from statistics and probability and presenting the results in easy-to-understand pictorial format (Nabria, 2019). 
+After studying many different articles, books and videos on Fishers data set analyses which presented numerous different approaches to analysing the data set, I concluded that a simplified exploratory data analysis would work best. Exploratory Data Analysis is the process of analysing data by using simple concepts from statistics and probability and presenting the results in easy-to-understand pictorial format (Nabria, 2019). The data would be analysed using Python, Pandas, Matplotlib, Pyplot and Seaborn libraries. Histograms and scatterplots would also be produced to help visualise data and aid comparative analysis. 
+
+Code
+
+
 
 
 
