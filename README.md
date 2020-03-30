@@ -10,7 +10,7 @@ After studying many different articles, books and videos on Fishers data set ana
 
 Code
 
-
+The code starts by importing all essential libraries which would be used throughout the project. Numpy imported as np, matplotlib.pyplot as plt, sys imported, pandas imported and from pandas both read_csv and scatter_matrix are both imported. NumPy is the fundamental package for scientific computing with Python. It is a general-purpose array-processing package. Matplotlib.pyplot is a state-based interface to matplotlib. pyplot is mainly intended for interactive plots and simple cases of programmatic plot generation (Hunter et al, 2020). 
 
 
 
@@ -29,5 +29,7 @@ Code
                                                References
 
 Anderson, Edgar. “The Species Problem in Iris.” Annals of the Missouri Botanical Garden, vol. 23, no. 3, 1936, pp. 457–509. JSTOR, www.jstor.org/stable/2394164. Accessed on: 27-03-2020.
+
+Hunter, J., Dale, D., Firing, E., Droettboom, M. (2020) 'Matplotlib.pyplot' Matplotlib.org. Available at: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html Accessed on: 30-03-2020.
 
 Nabriya, P. (2019) "Exploratory Data Analysis: Uni-variate analysis of Iris Data set" Medium. Available at: https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40 Accessed on: 27-03-2020.
