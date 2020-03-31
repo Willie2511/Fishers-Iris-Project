@@ -6,7 +6,7 @@ This project will investigate and analyse the well-known Fishers Iris Data Set. 
 
 Literature Review
 
-After studying many different articles, books and videos on Fishers data set analyses which presented numerous different approaches to analysing the data set, I concluded that a simplified exploratory data analysis would work best. Exploratory Data Analysis is the process of analysing data by using simple concepts from statistics and probability and presenting the results in easy-to-understand pictorial format (Nabria, 2019). The data would be analysed using Python, Pandas, Matplotlib, Pyplot and Seaborn libraries. Histograms and scatterplots would also be produced to help visualise data and aid comparative analysis. 
+After studying many different articles, books and videos on Fishers data set analyses which presented numerous different approaches to analysing the data set, I concluded that a simplified exploratory data analysis would work best. While a study by Kozak and Lotocka (2013) raised the question: Do Iris flowers have sepals?, which makes the data less interesting for botanists, statisticians have successfully used the data set for years. Exploratory Data Analysis is the process of analysing data by using simple concepts from statistics and probability and presenting the results in easy-to-understand pictorial format (Nabria, 2019). The data would be analysed using Python, Pandas, Matplotlib, Pyplot and Seaborn libraries. Histograms and scatterplots would also be produced to help visualise data and aid comparative analysis. 
 
 Code
 
@@ -31,6 +31,8 @@ The code starts by importing all essential libraries which would be used through
 Anderson, Edgar. “The Species Problem in Iris.” Annals of the Missouri Botanical Garden, vol. 23, no. 3, 1936, pp. 457–509. JSTOR, www.jstor.org/stable/2394164. Accessed on: 27-03-2020.
 
 Hunter, J., Dale, D., Firing, E., Droettboom, M. (2020) 'Matplotlib.pyplot' Matplotlib.org. Available at: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html Accessed on: 30-03-2020.
+
+Kozak, M., Lotocka, B. (2013) 'What should we know about the famous Iris data?' CURRENT SCIENCE, VOL. 104, NO. 5. Available at: https://www.researchgate.net/profile/Marcin_Kozak/publication/237010807_What_should_we_know_about_the_famous_Iris_data/links/02e7e51be9229f3495000000.pdf Accessed on: 30-03-2020.
 
 Lynn, S. (2020) "Python Pandas read_csv – Load Data from CSV Files" Panda Tutorials. Available at: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/ Accessed on: 30-03-2020.
 
