@@ -35,12 +35,25 @@ dataset = read_csv(url, names=names)
 print (dataset.shape)
 
 # Head
+# Head function is used to return the top specified number of rows of 
+# a dataset. In this case, 'dataset.head(20)' will print the top 20 rows
+# in the iris dataset
+
 print (dataset.head(20))
 
+
 # Descriptions
+# The '.describe ()' function generates descriptive statistics,
+# which include a summary of the central tendency, dispersion and the 
+# shape dataset's distribution.
+# The output of the '.describe()' function will be exported to a .txt file
+# called 'Flowers_summary.txt'
+
+
 print(dataset.describe(), file=open("Flowers_summary.txt", 'w'))
 
 # Class Distribution
+# The code below goups the dataset by class and size.
 print (dataset.groupby('class').size())
 
 print (dataset.describe(include='all'), file=open("Flowers_summary.txt", 'w'))
