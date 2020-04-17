@@ -9,11 +9,12 @@
 # Import all libraries which will be needed to analyses the dataset
 
 import sys
-import scipy
+import seaborn as sns
 import numpy as np 
 import matplotlib 
 import pandas
 import sklearn
+import matplotlib.pyplot as plt 
 from pandas import read_csv
 from matplotlib import pyplot
 from pandas.plotting import scatter_matrix
@@ -60,7 +61,7 @@ with open ('Flowers_summary.txt', 'w') as f:
     print (dataset.groupby('class').size(), file=f)
 f.close()
 
-print('********************************************')
+print('************************************************************************************')
 
 
 # The ('.describe(include='all')) function is similar to the .describe function but includes
@@ -90,8 +91,9 @@ pyplot.savefig('ScatterPlot.png')
 #Note the diagonal grouping of some pairs of attributes. 
 #This suggests a high correlation and a predictable relationship.
 
-
-
+df = dataset
+sns.boxplot( x=df["class"], y=df["sepal-length"], width=0.3);
+pyplot.savefig('BoxPlot.png')
 
 
 
