@@ -42,21 +42,34 @@ print (dataset.shape)
 print (dataset.head(20))
 
 
+
 # Descriptions
 # The '.describe ()' function generates descriptive statistics,
 # which include a summary of the central tendency, dispersion and the 
 # shape dataset's distribution.
-# The output of the '.describe()' function will be exported to a .txt file
-# called 'Flowers_summary.txt'
-
-
-print(dataset.describe(), file=open("Flowers_summary.txt", 'w'))
-
 # Class Distribution
-# The code below goups the dataset by class and size.
-print (dataset.groupby('class').size())
+# The code below also goups the dataset by class and size. 
+# The output of the '.describe()' and '.groupby' functions will be exported to a .txt file
+# called 'Flowers_summary.txt'
+# This is done using the 'with open as f:' command to ensure the code is as short and 
+# concise as possible. Both outputs are exported to the file 'Flowers_summary.txt' when the 
+# program is run.
 
-print (dataset.describe(include='all'), file=open("Flowers_summary.txt", 'w'))
+with open ('Flowers_summary.txt', 'w') as f:
+    print(dataset.describe(), file=f)
+    print (dataset.groupby('class').size(), file=f)
+f.close()
+
+print('********************************************')
+
+
+# The ('.describe(include='all')) function is similar to the .describe function but includes
+# a couple of extra pieces of information.
+# This info will be printed to the command line/terminal
+# while the .describe info will be exported to the .txt file. 
+
+print (dataset.describe(include='all'))
+
 
 
 # Visualisation
@@ -79,68 +92,3 @@ pyplot.savefig('ScatterPlot.png')
 
 
 
-
-#######################################################################################
-#          This section is an attempt at learning predicting and testing              #
-#######################################################################################
-
-# Experimental 
-import pandas
-import matplotlib.pyplot as plt
-from sklearn import model_selection
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
-
-
-
-array = dataset.values
-X = array[: ,0:4]
-Y = array[: ,4]
-validation_size = 0.20
-seed = 7
-X_train, X_validation, Y_train, Y_validation= model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
-
-seed = 7
-scoring = 'accuracy'
-
-
-
-models = []
-models.append(('LR', LogisticRegression()))
-models.append(('LDA', LinearDiscriminantAnalysis()))
-models.append(('KNN', KNeighborsClassifier()))
-models.append(('CART', DecisionTreeClassifier()))
-models.append(('NB', GaussianNB()))
-models.append(('SVM', SVC()))
-# evaluate each model in turn
-results = []
-names = []
-for name, model in models:
- kfold = model_selection.KFold(n_splits=10, random_state=seed)
- cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
- results.append(cv_results)
- names.append(name)
- msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
- print(msg)
-
-
- # Make predictions on validation dataset
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_validation)
-print(accuracy_score(Y_validation, predictions))
-print(confusion_matrix(Y_validation, predictions))
-print(classification_report(Y_validation, predictions))
-
-
-
-
-#####################################################################
-#####################################################################
