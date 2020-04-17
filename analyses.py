@@ -73,12 +73,18 @@ print (dataset.describe(include='all'))
 
 
 # Visualisation
-#Histograms
+# Histograms = a representation of the distribution of the data.
+# Created using the matplotlib.pyplot.
+# saved as .png file using the 'pyplot.savefig' function
 
 dataset.hist()
 pyplot.savefig('Histogram.png')
 
 # Scatter Plot Matrix
+# Draws a matrix of scatter plots
+# Very beneficial for comparison and analyses.
+# Saved as .png file using the same pandas function as the histogram above.
+
 scatter_matrix(dataset)
 pyplot.savefig('ScatterPlot.png')
 #Note the diagonal grouping of some pairs of attributes. 
