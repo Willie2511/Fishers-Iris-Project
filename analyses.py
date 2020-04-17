@@ -1,4 +1,8 @@
 # Willie Byrne
+# Analyses of Fisher's Iris Data set
+# First section will import, analyse and produce graphs
+# to visually represent the data.
+# Second section will attempt to take on a 
 
 import sys
 import scipy
