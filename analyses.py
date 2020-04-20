@@ -91,10 +91,15 @@ pyplot.savefig('ScatterPlot.png')
 #Note the diagonal grouping of some pairs of attributes. 
 #This suggests a high correlation and a predictable relationship.
 
-df = dataset
-sns.boxplot( x=df["class"], y=df["sepal-length"], width=0.3);
+dataset.plot(kind='box', sharex=False, sharey=False)
 pyplot.savefig('BoxPlot.png')
 
+sns.violinplot(data=dataset, x="class", y="petal-length")
+pyplot.savefig('ViolinPlot.png')
+
+
+sns.pairplot(dataset, hue="class")
+pyplot.savefig('Pair.png')
 
 
 
