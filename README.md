@@ -26,7 +26,7 @@ The first lines of code written after all neccessary libraries were imported inv
 
 Once the data analyses was complete, using concise and accurate code, it was time to visually represent the data on graphs. First up was the task of simply creating a histogram. The histogram was created using the 'dataset.hist()' command, before using pyplot to save the resulting graph as a .png file. This was completed using the 'pyplot.savefig' command. The next task was to produce a scatter plot for each pair of variables. This scatterplot required the use of a previously unfamiliar library, scatter_matrix which was imported form pandas.plotting. The code was relatively simple, after some research, and the scatter plot was created and shown with two lines of code. The first line was simply 'scatter_matrix(dataset)', while the second line used 'plt.show()' to print the plot to the screen when the program is run. 
 
-This concluded all the necessary code which was needed to accurately produce and meet the assessment criteria set out in the project brief, however through further research I decided to dig a little deeper into the data and learn new Python libraries for data analyses. The areas I focused on for this section included graphs, plots and visual data representation. After extensive research through previous studies, and instructional python online articles, I developed a list of effective plots which would be most beneficial for this specific data set.  
+This concluded all the necessary code which was needed to accurately produce and meet the assessment criteria set out in the project brief, however through further research I decided to dig a little deeper into the data and learn new Python libraries for data analyses. The areas I focused on for this section included graphs, plots and visual data representation. After extensive research through previous studies, and instructional python online articles, I developed a list of effective plots which would be most beneficial for this specific data set. The next step was to learn the code necessary to produce the desired plots. Violin plots are a method of plotting numeric data and can be considered a combination of the box plot with a kernel density plot (Lewinson, 2019). 
 
 
 
@@ -53,6 +53,8 @@ Driscoll, M. (2017) "The sys Module" Python 101. Available at: https://python101
 Hunter, J., Dale, D., Firing, E., Droettboom, M. (2020) 'Matplotlib.pyplot' Matplotlib.org. Available at: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html Accessed on: 30-03-2020.
 
 Kozak, M., Lotocka, B. (2013) 'What should we know about the famous Iris data?' CURRENT SCIENCE, VOL. 104, NO. 5. Available at: https://www.researchgate.net/profile/Marcin_Kozak/publication/237010807_What_should_we_know_about_the_famous_Iris_data/links/02e7e51be9229f3495000000.pdf Accessed on: 30-03-2020.
+
+Lewinson, E. (2019) "Violin plots explained" Towards Data Science. Available at: https://towardsdatascience.com/violin-plots-explained-fb1d115e023d Accessed on: 21-04-2020.
 
 Lynn, S. (2020) "Python Pandas read_csv – Load Data from CSV Files" Panda Tutorials. Available at: https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/ Accessed on: 30-03-2020.
 
