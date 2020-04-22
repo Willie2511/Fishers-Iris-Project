@@ -87,7 +87,8 @@ pyplot.savefig('Histogram.png')
 # Saved as .png file using the same pandas function as the histogram above.
 
 scatter_matrix(dataset)
-pyplot.savefig('ScatterPlot.png')
+plt.show()
+
 #Note the diagonal grouping of some pairs of attributes. 
 #This suggests a high correlation and a predictable relationship.
 
@@ -99,16 +100,21 @@ print("*********************************************************************")
 # the data set.
 
 # A simple violin plot was created using seaborn, and was saved as a .png file
-sns.violinplot(data=dataset, x="class", y="petal-length")
-pyplot.savefig('ViolinPlot.png')
+#sns.violinplot(data=dataset, x="class", y="petal-length")
+#pyplot.savefig('ViolinPlot.png')
 
 #The pairplot was also created using seaborn, gives a colorful grouping of variables
 # using a kde graph in the middle.
  
-sns.pairplot(dataset, hue="class", diag_kind="kde")
-pyplot.savefig('PairPlot.png')
+#sns.pairplot(dataset, hue="class", diag_kind="kde")
+#pyplot.savefig('PairPlot.png')
 
 
+#sns.set_style("whitegrid")
+#sns.FacetGrid(dataset, hue="class", height=7) \
+ #   .map(plt.scatter, "sepal-length", "sepal-width") \
+ #   .add_legend()
+#pyplot.savefig('Extra.png')
 
 
 
