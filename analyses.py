@@ -84,7 +84,6 @@ pyplot.savefig('Histogram.png')
 # Scatter Plot Matrix
 # Draws a matrix of scatter plots
 # Very beneficial for comparison and analyses.
-# Saved as .png file using the same pandas function as the histogram above.
 
 scatter_matrix(dataset)
 plt.show()
@@ -95,11 +94,17 @@ plt.show()
 
 print("*********************************************************************")
 
-# Here I have included two further graphs which give a better visual representation 
+print("*********************************************************************")
+
+
+
+# Here I have included further graphs which give a better visual representation 
 # of results, giving an accurate idea of the shape of the different flower types from
 # the data set.
 
-# A simple violin plot was created using seaborn, and was saved as a .png file
+# A simple violin plot was created using seaborn, for petal length and width, and also 
+# sepal length and width
+
 sns.violinplot(data=dataset, x="class", y="petal-length")
 plt.show()
 
@@ -112,6 +117,7 @@ plt.show()
 
 sns.violinplot(data=dataset, x="class", y="sepal-width")
 plt.show()
+
 #The pairplot was also created using seaborn, gives a colorful grouping of variables
 # using a kde graph in the middle.
  
