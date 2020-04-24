@@ -49,6 +49,8 @@ Driscoll, M. (2017) "The sys Module" Python 101. Available at: https://python101
 
 Hunter, J., Dale, D., Firing, E., Droettboom, M. (2020) 'Matplotlib.pyplot' Matplotlib.org. Available at: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html Accessed on: 30-03-2020.
 
+Koehrsen, W. (2018) "Histograms and Density Plots in Python" Towards Data Science. Available at: https://towardsdatascience.com/histograms-and-density-plots-in-python-f6bda88f5ac0 Accessed: 2-04-2020.
+
 Kozak, M., Lotocka, B. (2013) 'What should we know about the famous Iris data?' CURRENT SCIENCE, VOL. 104, NO. 5. Available at: https://www.researchgate.net/profile/Marcin_Kozak/publication/237010807_What_should_we_know_about_the_famous_Iris_data/links/02e7e51be9229f3495000000.pdf Accessed on: 30-03-2020.
 
 Lewinson, E. (2019) "Violin plots explained" Towards Data Science. Available at: https://towardsdatascience.com/violin-plots-explained-fb1d115e023d Accessed on: 21-04-2020.
@@ -63,4 +65,6 @@ Prateek, S. (2019) "KDE Plot Visualization with Pandas and Seaborn" Geeks For Ge
 
 Sharma, P. (2019) "Visualization and understanding: Iris Dataset" mc.ai. Available at: https://mc.ai/visualization-and-understanding-iris-dataset/ Accessed on: 30-03-2020.
 
-Trindade, F. (2019) "Start to learn Machine Learning with the Iris flower classification challenge" Medium. Available at: https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3 Accessed on: 14/04/2020.
+Trindade, F. (2019) "Start to learn Machine Learning with the Iris flower classification challenge" Medium. Available at: https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3 Accessed on: 14-04-2020.
+
+Wittig, M. (2016) "Discovering Machine Learning with Iris flower data set" Cloudonaut.io. Available at:https://cloudonaut.io/discovering-machine-learning-with-iris-flower-data-set/ Accessed on: 14-04-2020. 
