@@ -32,7 +32,7 @@ Finally, we produced a pairplot with a KDE (Kernel Density Estimate) for visuali
 
            Conclusion
      
-This project was an introduction to data analytics on a relatively small dataset, and provided the opportunity to code a program which would analyse the data and provide plots from which conclusions could be drawn. The use of multiple libraries was extremely beneficial as it allowed me to complete the project, and meet all criteria, in a concise and accurate manner. 
+This project was an introduction to data analytics on a relatively small dataset, and provided the opportunity to code a program which would analyse the data and provide plots from which conclusions could be drawn. The use of multiple libraries was extremely beneficial as it allowed me to complete the project, and meet all criteria, in an accurate and concise way. The project provided many challenges and required significant research and careful planning to complete in a timely maner. On completion I have developed a much more fluid work flow, an appreciation for consistent work, breaking a task into a number of smaller tasks, and the importance of planning and research. I have learned how to use multiple new libraries and how to produce new, more advanced, plots to help display data. 
 
 
 
