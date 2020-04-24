@@ -36,6 +36,10 @@ This project was an introduction to data analyses methods on a relatively small 
 
 
 
+*** To run this program simply type 'python analyses.py' in the terminal **
+
+
+
 
 
 
