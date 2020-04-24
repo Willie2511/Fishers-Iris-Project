@@ -38,6 +38,8 @@ This project was an introduction to data analyses methods on a relatively small 
 
 *** To run this program simply type 'python analyses.py' in the terminal **
 
+*** Although it was only the Histogram to be exported as a .png file when the program was run, I decided to save the other plots and graphs which were created, and also added them to the repository as .png files even though they were not necessitated. ***
+
 
 
 
